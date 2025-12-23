@@ -1,3 +1,7 @@
+// Linked to index3.html
+
+
+
 // ---Getter & Setter---
 // getter = special method that makes a property readable
 // setter = special method that makes a propert writeable
@@ -172,3 +176,55 @@ const student5 = new Students("Narendra", 25, "kadapa", "AP", "india");
 
 console.log(student4.name, student4.age, student4.address.city, student4.address.state);
 console.log(student5.name, student5.age, student5.address.city, student5.address.state);
+
+
+
+// ---Array of objects---
+
+const fruits = [{name: "apple", color: "red", calories: 24}, 
+                {name: "orange", color: "orange", calories: 43}, 
+                {name: "banana", color: "yellow", calories: 56}]
+
+// console.log(fruits[2].calories);
+// console.log(fruits[0].color);
+
+//to push new element into array
+fruits.push({name:"gauva", color: "green", calories: 105});
+console.log(fruits);
+
+// using forEach()
+fruits.forEach(fruit => console.log(fruit.name));
+
+// using map()
+const fruitColor = fruits.map(fruit => fruit.color);
+console.log(fruitColor);
+
+// using filter()
+const fruitCalories = fruits.filter(fruit => fruit.calories < 100);
+console.log(fruitCalories);
+
+// using reduce()
+const maxCal = fruits.reduce((max, fruit) => fruit.calories > max ? fruit.calories : max);
+console.log(maxCal.calories);
+
+
+
+// ---Sorting---
+// method used to sort elements of an array in place. "sort()"
+// sorts an element as strings in lexicographic order, not alphabetical
+// lexicographic = (alphabet + numbers + symbols) as strings
+// to sort numbers in an array using sort => numbers.sort((a, b) => a - b);
+
+const Ages = [{name:"squidward", age: 47, city:"under water"},
+              {name:"spongebob", age: 24, city:"under water"},
+              {name:"patrick", age:30, city:"under water"},
+]
+
+// const ages = Ages.sort((a, b) => b.age - a.age);
+Ages.sort((a, b) => a.age - b.age);
+console.log(Ages);
+console.log(Ages[2].age);
+
+// to sort strings in array
+Ages.sort((a, b) => a.name.localeCompare(b.name));
+console.log(Ages);

@@ -1,5 +1,8 @@
-console.log("Hello this is a practice session for javascript");
-window.alert("the java script is working");
+// Linked to index.html
+
+
+console.log("Hello this is a practice session for javascript");// to print the text in console
+window.alert("the java script is working");// displays as a popup
 
 let age = window.prompt("enter your age: ");
 let cgpa = 7.5;

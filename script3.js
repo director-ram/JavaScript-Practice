@@ -1,3 +1,6 @@
+// Linked to index.html
+
+
 //--- LOOPS ---
 // while loop: runs until a certain condition is met
 // do while loop: runs at least once, then checks the condition

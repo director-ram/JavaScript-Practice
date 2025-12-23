@@ -1,3 +1,6 @@
+// Linked to index2.html
+
+
 //---spread operator---
 // it allows an iterable such as an array or string to be expanded into separate elements, it represented as "..."
 
@@ -12,6 +15,7 @@ document.getElementById("button").onclick = function(){
     response.textContent = "I told you shortcuts bastard use them.";
 
 }
+
 
 
 //---rest parameters---
@@ -53,6 +57,8 @@ function combineStrings(...strings){
 }
 let fullName = combineStrings("Mr.", "Hema", "Sai");
 console.log(fullName);
+
+
 
 // ---Dice Roller---
 

@@ -1,3 +1,6 @@
+// Linked to index.html
+
+
 // ---number guessing game---
 const maxNum = 100;
 const minNum = 1;
@@ -28,8 +31,11 @@ document.getElementById("guess-btn").onclick = function(){
       }
    };
 
+
+
 //---function---
 // the function is used to reuse the code and avoid repetition.
+
 function add(x, y){ //parameters
     return x + y;
 }
@@ -51,6 +57,7 @@ function isEmail(email) {
 console.log(isEmail("test@test.com"));
 
 
+
 // ---variable scope---
 // variable scope = where a variable is recognized and accessible(local or global).
 
@@ -66,6 +73,8 @@ function secondOne(){
 
 secondOne();
 firstOne();
+
+
 
 //---temperature conversion---
 const toFahrenheit = document.getElementById("fahrenheit");
@@ -100,6 +109,8 @@ function convert(){
     }
     }
 }
+
+
 
 // ---Array---
 // an array is a collection of items.

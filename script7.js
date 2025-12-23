@@ -1,3 +1,6 @@
+// Linked to index2.html
+
+
 // ---Arrow Functions---
 // A concise way to write a function expression good for simple function that only use once
 // (parameters) => some code

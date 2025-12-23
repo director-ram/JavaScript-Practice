@@ -9,7 +9,8 @@ body{
 .Nav{
     display: flex;
     justify-content: left;
-    align-items: flex-start;
+    align-items: space-around;
+    margin: 10px;
 }
 .home{
     color: aquamarine;

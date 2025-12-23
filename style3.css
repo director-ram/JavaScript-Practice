@@ -1,0 +1,21 @@
+.Nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    border-radius: 10px;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.nav{
+    font: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blue;
+}
+
+h2{
+    font: bold;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}

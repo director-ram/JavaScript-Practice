@@ -1,3 +1,6 @@
+// Linked to index.html
+
+
 // ---Random Password Generator---
 
 function randomPassword(lowerCase, upperCase, Numbers, Symbols, Length){

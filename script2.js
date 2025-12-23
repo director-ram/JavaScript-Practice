@@ -1,3 +1,6 @@
+// Linked to index.html
+
+
 let day = document.getElementById("day-input");
 let btn = document.getElementById("day-btn");
 
@@ -30,10 +33,13 @@ btn.onclick = function(){
         display = "Enter only numbers from 1-7";
     }
     console.log(display);
-    document.getElementById("day-result").textContent = 
-    display;
-    //---method chaining---                                                                                                                                                                          
-    let mobileNumber = "1213-456-789";
+    document.getElementById("day-result").textContent = display;
+    
+    
+    
+//---method chaining---                                                                                                                                                                          
+
+let mobileNumber = "1213-456-789";
 let show = mobileNumber.replaceAll("-", " ");
 console.log(show,`,this is original format //${mobileNumber}`);
 // mobileNumber.padEnd(14, "0");
@@ -42,6 +48,9 @@ console.log(show,`,this is original format //${mobileNumber}`);
 
 
 }
+
+
+
 // ---logical operators---
 // AND - &&
 // OR - ||
@@ -59,6 +68,9 @@ else{
 // else{
 //     console.log("The weather is good!");
 // }
+
+
+
 
 // ---operators---
 // = assignment operator

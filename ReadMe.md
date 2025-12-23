@@ -1,1 +1,94 @@
 **Everything you need to know in JavaScript at one place with example code**
+there will be more topics coming up..., so if you are looking for basics JS look through the files and i will keep updating the repo with new topics
+
+**INDEX**
+
+HTML & CSS has basic syntax's, this repo will mostly contains of JavaScript topics, more topics will be covered in future.
+
+SCRIPT.JS:
+
+    -basics on JS syntax with examples and datatypes.
+
+    -condtional statements, Basics of DOM(document object manipulation), variable declaration, basic idea of function
+
+SCRIPT2.JS:
+
+    -small practice program
+
+    -method chaining
+
+    -logical operators
+
+    -operators
+
+SCRIPT3.JS:
+
+    -all types of Loops
+
+SCRIPT4.JS:
+
+    -number guessing game(practice program)
+
+    -function
+
+    -variable scope
+
+    -temperature conversion(practice program)
+
+    -Array
+
+SCRIPT5.JS:
+
+    -Spread operator
+
+    -rest parameters
+
+    -Dice Roller(practice program)
+
+SCRIPT6.JS:
+
+    -Random Password Generator(practice program)
+
+    -call back
+    
+    -For Each
+
+    -Map
+
+    -filter
+
+    -reduce
+
+    -function expression
+
+SCRIPT7.JS:
+
+    -Arrow Functions
+
+    -Objects
+
+    -This
+
+    -Constructors
+
+    -Class
+
+    -Static
+
+    -Inheritence
+
+    -Super
+
+SCRIPT8.JS:
+
+    -Getter & Setter
+
+    -Destructuring
+
+    -Nested Objects
+
+    -Array of objects
+
+    -Sorting
+
+new topics will we updated...., stay tuned!!
