@@ -1,0 +1,451 @@
+.body{
+    background-color: #646bfa;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    animation-duration: 10s;
+    scroll-padding-top: 50vh;
+}
+.Nav{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+}
+.nav-left{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 1px;
+    z-index: 100;
+    gap: 10px;
+    
+}
+.home{
+    text-decoration: dotted;
+    font-size: medium;
+    font: optional;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: red;
+    padding: 5px 10px;
+}
+.pic{
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: red;
+    padding: 5px 10px;
+}
+.username{
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: red;
+    padding: 5px 10px
+}
+
+.heading{
+    color: rgb(109, 228, 12);
+    font: italic 100px;
+    font-size: larger;
+    font-display: flex;
+}
+.paragraph{
+    color: blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    animation-delay: initial;
+}
+
+.heading:hover{
+ cursor: pointer;
+ color: red;
+ grid-area: span;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-decoration: underline;
+ /* background-color: black; */
+ transition: transform 1.5s;
+ transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+ /* background-image: url(images/ace,sabo,luffy.jpg); */
+}
+
+.image{
+    width: auto;
+    height:auto;
+    border-radius: 10px;
+    border: 5px lightblue;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    margin: 5px;
+    padding: 5px;
+    background-color: #130e0e;
+    border: 1px solid #ccc;
+}
+   
+.button{
+    color: white;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button:hover{
+    color: red;
+    background-color: black;
+    display: flexbox;
+    rotate: 360deg;
+    transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+}
+
+.card-container{
+    perspective: 1000px;
+    display: flex;
+    width: 350px;
+    margin: 100px auto;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(8px);
+    transition: transform 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    will-change: transform;
+    padding: 30px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card:hover{
+    background-color: #4751ff;
+    box-shadow: 0 10px 40px 0 rgba(214, 214, 247, 0.96);
+}
+.card img.image{
+    width: 90%;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.title{
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    
+}
+/* .title:hover{
+    color: red;
+    font-family: italic;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transform: scale3d(1,1,1);
+    transition: transform 0.9s ease-in-out;
+} */
+#myLabel{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: center;
+    content: center;
+    justify-content: center;
+    display: flex;
+}
+
+#Btn-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: background-color 1.25s ease-in-out;
+
+}
+.buttons{
+    color: black;
+    background-color: rgb(255, 255, 157);
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.buttons:hover{
+    background-color: rgba(255, 255, 0, 0.874);
+}
+.H3{
+    justify-content: center;
+    text-overflow: initial;
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+}
+.btn {
+    /* text-align: center; */
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    /* justify-content: center; */
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 10px;
+    color: #4751ff;
+    background-color: #646bfa;
+    transition: transform 0.3s ease-in-out;
+}
+.btn:hover{
+    transition: transform 0.3s ease-in-out;
+    background-color: #4751ff;
+    color: black;
+    transform: scale(1.05);
+}
+.Roll-Btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    content-visibility: visible;
+}
+.Label{
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+#Dice {
+        display: block;
+        margin-top: 5px;
+}
+
+.day-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-input{
+    border-radius: 10px;
+    border: #4751ff 1px;
+    background-color: bisque;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.day-btn{
+    background-color: #101cfa;
+    box-shadow: 5px 5px 5px #646bfa;
+    border: yellow 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.day-btn:hover{
+    background-color: #0848f7;
+    text-emphasis-color: green;
+    border-color: #37ff00 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.day-result{
+    font-family: 'bold';
+    color: rgba(255, 140, 0, 0.97);
+    font-weight: 200;
+}
+
+.guess-label{
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.guess-input{
+    border-radius: 10px;
+    border: #4751ff 1px;
+    background-color: bisque;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 10px;
+}
+.guess-btn{
+    background-color: #646bfa;
+    box-shadow: #646bfa;
+    border: #37ff00 2px;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+.guess-btn:hover{
+    background-color: #0848f7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-emphasis-color: green;
+    border-color: #37ff00 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.guess-result{
+    font-family: 'bold';
+    color: rgba(255, 140, 0, 0.97);
+    font-weight: 200;
+}
+.guess-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.temp-label{
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.temp-input{
+    border-radius: 10px;
+    border: #4751ff 1px;
+    background-color: bisque;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+.temp-radio{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+}
+.temp-btn{
+    background-color: #2a34ee;
+    border: none;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.temp-btn:hover{
+    background-color: #ff1111b6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-emphasis-color: green;
+    border-color: #37ff00 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.temp-result{
+    font-family: 'bold';
+    color: rgba(255, 140, 0, 0.97);
+    font-weight: 2em;
+}
+
+.passgen{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+#password{
+    color: #37ff00;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+.passButton{
+    background-color: antiquewhite;
+    color: #2a34ee;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.passButton:hover {
+    background-color: aqua;
+    color: #130e0e;
+    cursor: pointer;
+    box-shadow: hsl(0, 15%, 6%);
+}
+
+#callback{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(226, 255, 9);
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.callback-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: initial;
+}
+.input{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin: 10px;
+}
+#callBackValue{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    color: #000000;
+    background-color: rgb(255, 232, 25);
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin: 5px;
+}
+#callBackValue2{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    color: #000000;
+    background-color: rgb(255, 232, 25);
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin: 5px;
+}
+.AddButton{
+    background-color: #37ff00;
+    border: none;
+    border-radius: 10px;
+    color: black;
+}
+.AddButton:hover{
+    background-color: hsl(107, 100%, 40%);
+    cursor: pointer;
+}

@@ -1,0 +1,1 @@
+**Everything you need to know in JavaScript at one place with example code**

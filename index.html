@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/ace,sabo,luffy.jpg">
+    <title>JavaScript</title>
+</head>
+<body class="body">
+    <div class="Nav .bg-transparent">
+        <div class="nav-left">
+            <a href="#Home"><p class="home" >Home</p></a>
+            <a href="#Pic"><p class="pic" >Image</p></a>
+            <a href="#sub"><p class="username">Submit</p></a>
+            <a href="index2.html"><p class="pic">extend</p></a>
+        </div>
+    </div>    
+    <h1 class="heading" id="Home">Hello this is a practice session</h1>
+    <p class="paragraph">In this session we are going to learn about JavaScript</p>
+    <h2 id="H2" style="color: blue;background-color: azure;"></h2>
+    <span style="background-color: azure;"><p id="p1" style="color: black;font-size: small;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></p></span>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/ace,sabo,luffy.jpg" alt="image" class="image" id="Pic">
+            <h2 class="title">OnePiece Trio</h2>
+            <p> A legendary trio of onepiece anime: ACE, SABO, LUFFY.</p>
+        </div>
+    </div>
+    <p id="p2"></p>
+    <label id="sub">Username:</label>
+    <input type="text" id="text" style="border-radius: 15px;border: 2px solid black;padding: 10px;margin: 10px;text-align: justify;color:blue">
+    <br>
+    <button id="submit" class="button">Submit</button>
+    <p id="message" style="color: rgb(233, 102, 9);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: italic;font-display: flex;font-size: small;background-color: beige;"></p>
+    <br>
+    <p id="p3" style="color: rgb(233, 102, 9);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: italic;font-display: flex;font-size: small;"></p>
+    <br>
+    <h3 class="H3">Counter</h3>
+    <label id="myLabel">0</label><br>
+    <div id="Btn-container">
+    <button id="increase" class="buttons">Increase</button>
+    <button id="reset" class="buttons">Reset</button>
+    <button id="decrease" class="buttons">Decrease</button>
+    </div>
+    <br>
+    <div class="Roll-Btn">
+    <button id="Roll" class="btn">🎲</button>
+    <br><br>
+    <label id="Dice" class="Label"></label>
+    </div>
+    <br>
+    <div class="day-container">
+        <label id="day">Enter the number from 1-7 to get the day: </label>
+        <input type="number" id="day-input" class="day-input" min="1" max="7">
+        <button id="day-btn" class="day-btn">Which Day?</button>
+        <p id="day-result" class="day-result"></p>
+    </div>
+
+    <div class="guess-container">
+        <label id="guess-label">Enter your guess: </label>
+        <input type="number" id="guess-input" class="guess-input">
+        <button id="guess-btn" class="guess-btn">Guess</button>
+        <p id="guess-result" class="guess-result"></p>
+    </div>
+    <br>
+    <div class="temp-container">
+        <label id="temp-label" class="temp-label">Enter the temperature 🌡️: </label>
+        <input type="number" id="temp-input" class="temp-input" value="0"><br>
+        <input type="radio" id="celsius" name="unit" class="temp-radio">
+        <label for="celsius" class="temp-label">Fahrenheit ➡️ Celsius</label><br>
+        <input type="radio" id="fahrenheit" name="unit" class="temp-radio">
+        <label for="fahrenheit" class="temp-label">Celsius ➡️ Fahrenheit</label><br>
+        <button onclick="convert()" class="temp-btn">Convert</button>
+        <p id="temp-result" class="temp-result"></p>
+    </div>
+    <br>
+    <div class="callback-div">
+        <label class="input"> Enter two numbers: </label>
+        <input type="number" value="0" id="callBackValue">
+        <br>
+        <input type="number" value="0" id="callBackValue2">
+        <button onclick="displayDOM()" class="AddButton">ADD</button>
+    </div>
+    <p id="callback"></p><br>
+    <div class="passgen">
+        <button onclick="generate()" class="passButton">Generate Password</button>
+        <p id="password"></p>
+    </div>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+        <script src="script3.js"></script>
+        <script src="num_guess_script4.js"></script>
+        <script src="script6.js"></script>
+</body>
+</html>
