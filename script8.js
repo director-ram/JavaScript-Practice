@@ -168,5 +168,7 @@ class Address{
 }
 
 const student4 = new Students("Neeraj", 76, "sangareddy", "telengana", "india");
+const student5 = new Students("Narendra", 25, "kadapa", "AP", "india");
 
 console.log(student4.name, student4.age, student4.address.city, student4.address.state);
+console.log(student5.name, student5.age, student5.address.city, student5.address.state);
