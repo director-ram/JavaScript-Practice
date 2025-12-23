@@ -1,5 +1,6 @@
 **Everything you need to know in JavaScript at one place with example code**
-there will be more topics coming up..., so if you are looking for basics JS look through the files and i will keep updating the repo with new topics
+
+    there will be more topics coming up..., so if you are looking for basics JS look through the files and i will keep updating the repo with new topics
 
 **INDEX**
 
