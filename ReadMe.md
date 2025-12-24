@@ -92,4 +92,8 @@ SCRIPT8.JS:
 
     -Sorting
 
-new topics will we updated...., stay tuned!!
+    -Fisher yates algorithm(shuffling array)
+
+    -Date objects
+
+new topics will we updated...., stay tuned!!🤗🤗

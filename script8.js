@@ -228,3 +228,62 @@ console.log(Ages[2].age);
 // to sort strings in array
 Ages.sort((a, b) => a.name.localeCompare(b.name));
 console.log(Ages);
+
+
+
+// ---Fisher yates algorithm(shuffling array)---
+
+const cards = ['A', 1,2,3,4,5,6,7,8,9,10,'K','Q','J'];
+
+// we can use this cards.sort(()=>Math.random() - 0.5); but it is not efficient if the array has too many elements.
+
+function shuffle(array){
+    for(let i = array.length - 1; i > 0; i--){
+        const random = Math.floor(Math.random() * (i + 1));
+
+        [array[i], array[random]] = [array[random], array[i]]; 
+    }
+}
+shuffle(cards);
+
+console.log(cards);
+
+
+
+// ---Date objects---
+// Objects that contain values that represent dates and times, these date objects can be changed and formatted
+const date = new Date("2026-01-18T18:30:10Z");//you can pass your own date and time, for current time and date do not pass any parameters to Date constructor
+console.log(date);
+
+// you can get and set dates, months, years, minutes, hours, seconds
+const year = date.getFullYear();//date.setFullYear(2026);
+const month = date.getMonth();//date.setMonth(7);
+const day = date.getDate();//date.setDate(14);
+const hour = date.getHours();//date.setHours(6);
+const minutes = date.getMinutes();//date.setMinutes(45);
+const seconds = date.getSeconds();//date.setSeconds(10);
+const dayOfWeek = date.getDay();
+
+console.log(year);
+console.log(month);
+console.log(day);
+console.log(hour);
+console.log(minutes);
+console.log(seconds);
+console.log(dayOfWeek);
+
+// Example:
+
+const date1 = new Date("2025-12-31T18:30:00Z");
+const date2 = new Date();
+const show = document.getElementById("message");
+
+function wish(){
+    if(date2 > date1){
+    window.alert(`Happy new year`);
+    }
+    else{
+        show.textContent = `Come after ${date1}`;
+        setTimeout(() => show.textContent = ``, 10000);
+    }
+}

@@ -1,3 +1,7 @@
+body{
+    justify-content: center;
+    background-color: rgb(105, 46, 243);
+}
 .Nav{
     display: flex;
     justify-content: space-around;
@@ -18,4 +22,33 @@ h2{
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
+}
+
+.conatainer{
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+button:hover{
+    background-color: rgb(69, 245, 11);
+    color: black;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+p{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font: bold;
+    margin: 10px;
+    padding: 10px;
 }

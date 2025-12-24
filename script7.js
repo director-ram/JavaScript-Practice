@@ -151,8 +151,8 @@ const user1 = new User("Hemasai");
 const  user2 = new User("Madhu");
 user1.displayName();
 user2.displayName();
-console.log(User.count);
 User.deleteUser();
+console.log(`the current user count is ${User.count}`);
 
 
 
