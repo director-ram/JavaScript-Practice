@@ -96,4 +96,6 @@ SCRIPT8.JS:
 
     -Date objects
 
+    -Closure
+
 new topics will we updated...., stay tuned!!🤗🤗

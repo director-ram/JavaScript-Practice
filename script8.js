@@ -287,3 +287,50 @@ function wish(){
         setTimeout(() => show.textContent = ``, 10000);
     }
 }
+
+
+
+// ---Closure---
+// A function defined inside another function that has access to variables and scope of the outer function.
+// Allow for private variables and state maintenance
+// Used frequently in JS frameworks: React, Vue, Angular
+let pass;
+let loggedIn = false;
+
+do{
+    pass = window.prompt(`Enter your password: `);
+    if(pass === "123"){
+        loggedIn = true;
+    }
+}while(pass === "" || !loggedIn);
+
+function userPoints(loggedIn){
+    let score = 0;
+
+    if(loggedIn){
+        function increasePoints(points){
+        score += points
+        console.log(`Your score was increased by +${points}`);
+    }
+
+    function decreasePoints(points){
+        score -= points;
+        console.log(`Your score was decreased by -${points}pts`);
+    }
+
+    function getScore(){
+        return score;
+    }
+    
+    return {increasePoints, decreasePoints, getScore};
+    }
+    else{
+        console.log(`logging first!!`);
+    }
+}
+
+const user = userPoints(loggedIn);
+
+user.increasePoints(45);
+user.decreasePoints(10);
+console.log(`Your total score is ${user.getScore}pts`);

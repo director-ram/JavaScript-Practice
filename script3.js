@@ -22,6 +22,9 @@
 // }
 // console.log(`hello ${email}`);
 
+
+
+
 // ---do while---
 let loggedIn = false;
 let name = window.firstName;
@@ -34,9 +37,13 @@ do{ //do while loop runs at least once, then checks the condition
         loggedIn = true;
     }
 }while(password == "" || !loggedIn)
-    console.log(`Hello ${name}`);
-    console.log("login successfull!");
-    window.alert("loggedIn");
+
+console.log(`Hello ${name}`);
+console.log("login successfull!");
+window.alert("loggedIn");
+
+
+
 
 //--- for loop---
 for (let i = 10; i >= 0; i--){
