@@ -98,4 +98,11 @@ SCRIPT8.JS:
 
     -Closure
 
+
+SCRIPT9.JS:
+    
+    -setTimeout & clearTimeout
+
+    -Digital Clock
+
 new topics will we updated...., stay tuned!!🤗🤗

@@ -52,3 +52,36 @@ p{
     margin: 10px;
     padding: 10px;
 }
+
+.btn{
+    padding: 10px;
+    margin: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: black;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman';
+    font: bold;
+}
+
+.Timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock{
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: monospace;
+    backdrop-filter: blur(5px);
+    backface-visibility: hidden;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px ;
+    text-align: center;
+    text-decoration: dotted;
+    color: white;
+}
