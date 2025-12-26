@@ -103,6 +103,6 @@ SCRIPT9.JS:
     
     -setTimeout & clearTimeout
 
-    -Digital Clock
+    -Digital Clock(practice program)
 
 new topics will we updated...., stay tuned!!🤗🤗
