@@ -1,3 +1,5 @@
+// linked to index3.html
+
 // ---setTimeout---
 // function in JS that allows you to schedule the execution
 // of a function after an amount of time(miliseconds)
@@ -85,3 +87,15 @@ function update(){
 
     display.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`;
 }
+
+
+
+// ---ES6 Module---
+// AN external file that contains resuable code that can be imported into another JS file
+// that includes classes, variables, methods and more...
+// introduced as part of ECMAScript 2015 update
+// creating a script9.1.js file to write functions in it and import them here.
+
+import { getMessage } from "./script9_1.js";
+
+console.log(`the imported message is: "${getMessage()}"`)

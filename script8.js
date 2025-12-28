@@ -333,4 +333,4 @@ const user = userPoints(loggedIn);
 
 user.increasePoints(45);
 user.decreasePoints(10);
-console.log(`Your total score is ${user.getScore}pts`);
+console.log(`Your total score is ${user.getScore()}pts`);
