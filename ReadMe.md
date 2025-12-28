@@ -107,4 +107,6 @@ SCRIPT9.JS:
 
     -Stopwatch(practice program)
 
+    - ES6 Modules
+
 new topics will we updated...., stay tuned!!🤗🤗
