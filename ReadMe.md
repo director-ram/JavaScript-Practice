@@ -109,4 +109,8 @@ SCRIPT9.JS:
 
     - ES6 Modules
 
+    -Synchronous & Asynchronous
+
+    -Error Handling
+
 new topics will we updated...., stay tuned!!🤗🤗
