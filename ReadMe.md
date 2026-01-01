@@ -113,4 +113,9 @@ SCRIPT9.JS:
 
     -Error Handling
 
+
+SCRIPT10.JS:
+    
+    -Calculator(practice program)
+
 new topics will we updated...., stay tuned!!🤗🤗

@@ -1,5 +1,3 @@
-import { useCallback } from "react";
-
 export function getMessage(){
     return `this message was exported to script9.js`;
 }
@@ -31,7 +29,7 @@ func1(func2);
 
 
 
-// ---Error---
+// ---Error Handling---
 // An object that is created to represent a problem that occurs often with user input or establishing a connection.
 // try{} = Encloses code that might have potentially cause an error
 // catch {} = Catch and handle any thrown errors from try{}
@@ -51,9 +49,13 @@ try{
 
     const result = dividend / divisor;
     console.log(result);
+    window.alert(`The answer is ${result.toFixed(2)}`);
 }
 catch(error){
     console.error(error);
+    window.alert(error);
+}
+finally{
+    console.log("The program has been executed successfully!!");
 }
 
-console.log("The program has been executed successfully!!");
