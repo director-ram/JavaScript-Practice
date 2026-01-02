@@ -120,4 +120,6 @@ SCRIPT10.JS:
 
     -Document Object Model
 
+    -Element selectors
+
 new topics will we updated...., stay tuned!!🤗🤗

@@ -33,3 +33,44 @@ function execute(){
     // setTimeout(() => message.textContent = "", 5000);
     console.log(userName);
 }
+
+
+
+// ---Element selectors---
+// Methods used to target and manipulation HMTL elements, they allow you to select one or more html elements from the
+// DOM
+
+// 1. document.getElementById()  // Element or null
+// 2. document.getElementsClassName() // HTML collection
+// 3. document.getElementsByTagName() // HTML collection
+// 4. document.querySelector()  // Element or null
+// 5. document.querySelectorAll()  // NodeList
+
+// ById
+// message.style.color = "red";
+// message.style.fontSize = "bolder" //manipulating Element in HTMl via JS
+
+// // ByClassName
+// const className = document.getElementsByClassName("operator-btn");
+// console.log(className); // getting all the elements with same class name as a html collection
+// Array.from(className).forEach(classname => { // type casting all the values in elements into a array.
+//     classname.style.backgroundColor = "yellow";
+// });
+
+// // ByTagName
+// const btnElement = document.getElementsByTagName("button");
+// for(let element of btnElement){
+//     element.style.color = "white";
+//     element.style.fontFamily = "calibiri";
+// }
+
+// // querySelecotr
+// const label = document.querySelector("input");  // query selects the first matching element mentioned tag name
+// label.style.backgroundColor = "orange";
+
+// // querySelectorAll
+// // it is same as query selecotr but can access all elements inside a tag
+// const allSelects = document.querySelectorAll("h2");
+// allSelects.forEach(allSelect => {
+//     allSelect.style.backgroundColor = "red";
+// });
