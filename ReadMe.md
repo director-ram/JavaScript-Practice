@@ -118,4 +118,6 @@ SCRIPT10.JS:
     
     -Calculator(practice program)
 
+    -Document Object Model
+
 new topics will we updated...., stay tuned!!🤗🤗

@@ -1,9 +1,9 @@
 body{
-    height: 100vh;
     margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #calculattor{
@@ -83,4 +83,46 @@ button:active{
 }
 .operator-btn:hover{
     background-color: hsl(176, 100%, 53%);
+}
+#DOM{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column;
+}
+#user-input{
+    color: black;
+    background-color: rgba(196, 246, 255, 0.872);
+    padding: 10px;
+    border: 1px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.msg-btn{
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: 0.5s ease;
+}
+.msg-btn:hover{
+    background-color: rgba(9, 87, 87, 0.458);
+}
+.msg-btn:active{
+    background-color: rgb(243, 243, 243);
+}
+#message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 128, 255);
 }
