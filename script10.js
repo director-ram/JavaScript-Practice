@@ -70,7 +70,57 @@ function execute(){
 
 // // querySelectorAll
 // // it is same as query selecotr but can access all elements inside a tag
-// const allSelects = document.querySelectorAll("h2");
-// allSelects.forEach(allSelect => {
-//     allSelect.style.backgroundColor = "red";
-// });
+const allSelects = document.querySelectorAll("li");
+allSelects.forEach(allSelect => {
+    allSelect.style.padding = 10;
+});
+
+
+
+// ---DOM Navigation---
+// The process of navigation the structure of an HTML document using JavaScript.
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibiling
+// .previousElementSibiling
+// .parentElement
+// .children
+
+// .firstElementChild example:
+const ulElement = document.querySelectorAll("ul");
+ulElement.forEach(ulelement => {
+    const firstChild = ulelement.firstElementChild;
+    firstChild.style.backgroundColor = "yellow";
+});
+
+// .lastElementChild example:
+ulElement.forEach(ulelement => {
+    const lastChild = ulelement.lastElementChild;
+    lastChild.style.backgroundColor = "orange";
+});
+
+// .nextElementSibiling example:
+const element = document.getElementById("apple");
+const nextElement = element.nextElementSibling;
+nextElement.style.backgroundColor = "red";
+nextElement.style.color = "white";
+
+// .previousElementSibiling example:
+const elementpre = document.getElementById("cabage");
+const previousElement = elementpre.previousElementSibling;
+previousElement.style.backgroundColor = "blue";
+previousElement.style.color = "yellow";
+
+// .parentElement example:
+const elementParent = document.getElementById("orange");
+const parent = elementParent.parentElement;
+parent.style.fontFamily = "arial";
+
+// .children example:
+const elementChild = document.getElementById("vegetables");
+const children = elementChild.children;
+Array.from(children).forEach( child => {
+    child.style.padding = "10px";
+});
+children[2].style.backgroundColor = "black";
+children[2].style.color = "white";

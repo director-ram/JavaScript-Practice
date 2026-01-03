@@ -122,4 +122,6 @@ SCRIPT10.JS:
 
     -Element selectors
 
+    -DOM Navigation
+
 new topics will we updated...., stay tuned!!🤗🤗
