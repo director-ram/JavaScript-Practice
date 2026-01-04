@@ -124,3 +124,28 @@ Array.from(children).forEach( child => {
 });
 children[2].style.backgroundColor = "black";
 children[2].style.color = "white";
+
+// example to create an element
+const newH1 = document.createElement("h1");// it creates a element in html, we can use it to create any type of element
+newH1.textContent = `Calculator`;
+newH1.id = "myH1"; // this assigns a id to element
+newH1.style.color = "blue"; //this styles the element without changing anything in css file
+newH1.style.textAlign = "center";
+newH1.style.fontWeight = "bold";
+
+// example for append to html
+
+//document.body.append(newH1); // this inserts the newH1 content at the Bottom of the html
+document.body.prepend(newH1); // this inserts the newH1 content a the Top
+//document.getElementById("display").append(newH1);  // with this you can insert it inside a div or particular element with the id vice versa you can prepend to put it on top
+
+// const currElem = document.getElementById("box2");
+//document.body.insertBefore(newH1, currElem);  // this inserts the newH1 before box2 id i.e with this we can insert a element b/w two div
+
+// const classes = document.querySelectorAll(".operator-btn");
+// document.body.insertBefore(newH1, classes[2]);  // this helps with elements that didnt have id, by accessing thier class we can insert
+
+// example for removing an element
+
+document.body.removeChild(newH1); // to reomve a element within a body
+// document.getElementById("display").removeChild(newH1);  // to remove an element inside a div or element
