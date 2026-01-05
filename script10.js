@@ -149,3 +149,30 @@ document.body.prepend(newH1); // this inserts the newH1 content a the Top
 
 document.body.removeChild(newH1); // to reomve a element within a body
 // document.getElementById("display").removeChild(newH1);  // to remove an element inside a div or element
+
+
+
+// ---Event Listener---
+// Listen for specific events to create interactive web pages
+// events: click, mouseover, mouseout
+// .addEventListener(event, callback);
+
+const button = document.getElementById("myBtn");
+
+button.addEventListener("click", event =>{
+    event.target.style.backgroundColor = "red";
+    event.target.textContent = "Fuck you nigga 😡🤬";
+    event.target.style.transition = "0.5s ease";
+});
+
+button.addEventListener("mouseover", event => {
+    event.target.style.backgroundColor = "yellow";
+    event.target.textContent = "Caution ⚠️";
+    event.target.style.transition = "0.5s ease";
+});
+
+button.addEventListener("mouseout", event => {
+    event.target.style.backgroundColor = "green";
+    event.target.textContent = "click here ⬇️";
+    event.target.style.transition = "0.5s ease";
+});

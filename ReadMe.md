@@ -124,4 +124,6 @@ SCRIPT10.JS:
 
     -DOM Navigation
 
+    -Event Listener
+
 new topics will we updated...., stay tuned!!🤗🤗
