@@ -14,7 +14,7 @@ function calculate(){
     }
 }
 function clearDisplay(){
-    display.value = "0";
+    display.value = "";
 }
 
 
@@ -175,4 +175,44 @@ button.addEventListener("mouseout", event => {
     event.target.style.backgroundColor = "green";
     event.target.textContent = "click here ⬇️";
     event.target.style.transition = "0.5s ease";
+});
+
+
+
+// ---Key Events---
+// listen for specific events to create interactive web page
+//  events: keydown, keyup
+// syntax: document.addEventListener(event, callback);
+const moveDistance = 10;
+let x = 0;
+let y = 0;
+
+document.addEventListener("keydown", event => {
+    button.textContent = "click here 👌👈🍑";
+});
+
+document.addEventListener("keyup", event => {
+    button.textContent = "click here ⬇️";
+});
+document.addEventListener("keydown", event => {
+    if(event.key.startsWith("Arrow")){
+        event.preventDefault();
+        switch(event.key){
+            case "ArrowUp" :
+                y -= moveDistance;
+                break;
+            case "ArrowDown" :
+                y += moveDistance;
+            break;
+            case "ArrowLeft" :
+                x -= moveDistance;
+            break;
+            case "ArrowRight" :
+                x += moveDistance;
+            break;
+        }
+            button.style.top = `${y}px`;
+            button.style.left = `${x}px`;
+    }
+    console.log(event.key);
 });

@@ -140,4 +140,5 @@ button:active{
     text-align: center;
     justify-content: center;
     animation: normal 2s;
+    position: absolute;
 }

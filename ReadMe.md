@@ -126,4 +126,6 @@ SCRIPT10.JS:
 
     -Event Listener
 
+    -Key Events
+
 new topics will we updated...., stay tuned!!🤗🤗
