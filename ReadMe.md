@@ -128,4 +128,8 @@ SCRIPT10.JS:
 
     -Key Events
 
+    -Hide/Show elements(written in script.js file)
+
+    -NodeList
+
 new topics will we updated...., stay tuned!!🤗🤗

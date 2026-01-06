@@ -96,6 +96,6 @@ function update(){
 // introduced as part of ECMAScript 2015 update
 // creating a script9.1.js file to write functions in it and import them here.
 
-import { getMessage } from "./script9_1.js";
+// import { getMessage } from "./script9_1.js";
 
-console.log(`the imported message is: "${getMessage()}"`)
+// console.log(`the imported message is: "${getMessage()}"`)

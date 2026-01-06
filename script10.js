@@ -187,11 +187,11 @@ const moveDistance = 10;
 let x = 0;
 let y = 0;
 
-document.addEventListener("keydown", event => {
+document.addEventListener("keydown", () => {
     button.textContent = "click here 👌👈🍑";
 });
 
-document.addEventListener("keyup", event => {
+document.addEventListener("keyup", () => {
     button.textContent = "click here ⬇️";
 });
 document.addEventListener("keydown", event => {
@@ -215,4 +215,58 @@ document.addEventListener("keydown", event => {
             button.style.left = `${x}px`;
     }
     console.log(event.key);
+});
+
+
+
+// ---Node List---
+// Static collection of HTML elements (id, class, element)
+// can be created using querySelectorAll()
+// most likely an array, but no(map, filter, reduce)
+// NodeList won't update automatically to refelect changes
+let buttons = document.createElement("button"); // To create an element inside the Body
+
+buttons.textContent = "button5";
+buttons.classList = "btn";
+
+document.body.appendChild(buttons); // To push a new child into DOM
+
+buttons = document.querySelectorAll(".btn");
+console.log(buttons);
+
+buttons.forEach(button => { // To apply the condition on every child of body or an element
+    button.style.backgroundColor = "hsla(206, 100%, 50%, 1.00)";
+    button.style.color = "white";
+    button.textContent += "✅";
+
+    button.addEventListener("mouseover", () => {
+        button.style.backgroundColor = "hsla(206, 86%, 20%, 1.00)";
+        button.style.transition = "0.5s ease-in";
+    });
+
+    button.addEventListener("mouseout", () => {
+        button.style.backgroundColor = "hsla(206, 100%, 50%, 1.00)";
+        button.style.transition = "0.5s ease-in";
+    });
+
+    const originalText = button.textContent; // For restoring the original text after text changed in first click
+    button.addEventListener("click", (event) => {
+        if(event.target.textContent === "clicked!"){
+            event.target.textContent = originalText;
+            event.target.style.backgroundColor = "hsla(206, 100%, 50%, 1.00)";
+        }
+        else{
+            event.target.textContent = "clicked!";
+            event.target.style.backgroundColor = "hsla(206, 80%, 70%, 1.00)";
+        }
+    });
+});
+
+// to remove the element on click:
+buttons.forEach(button => {
+    button.addEventListener("click", event => {
+        event.target.remove();
+        buttons = document.querySelectorAll(".btn");
+        console.log(buttons);
+    });
 });
