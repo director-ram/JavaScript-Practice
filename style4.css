@@ -142,3 +142,17 @@ button:active{
     animation: normal 2s;
     position: absolute;
 }
+.nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    background-color: aqua;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}

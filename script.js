@@ -162,6 +162,25 @@ window.alert(`welcome ${firstName}`);
 // console.log(firstChar);
 // console.log(lastChar);
 
+
+// --- hide/show elements---
+const btn = document.getElementById("myBtn");
+const img = document.getElementById("Pic");
+const imgMsg = document.getElementById("imgMsg");
+
+btn.addEventListener("click", () => {
+    if(img.style.visibility === "hidden"){
+        img.style.visibility = "visible";
+        btn.textContent = "❌";
+        imgMsg.textContent = "";
+    }
+    else{
+        img.style.visibility = "hidden";
+        btn.textContent = "✅";
+        imgMsg.textContent = 'click on ✅ to display image.';
+    }
+});
+
 }
 else {
     console.log("restricted access, you can't use any feature in this site.");
