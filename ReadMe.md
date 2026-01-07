@@ -132,4 +132,9 @@ SCRIPT10.JS:
 
     -NodeList
 
+
+SCRIPT11.JS:
+
+    -Class List
+
 new topics will we updated...., stay tuned!!🤗🤗
