@@ -1,12 +1,13 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-behavior: smooth;
     flex-direction: column;
 }
-.back{
-    display: absolute;
+
+.back {
+    position: absolute;
     top: 10px;
     align-items: left;
     left: 20px;
@@ -18,7 +19,7 @@ body{
     font-size: 1.8rem;
 }
 
-#myButton{
+#myButton {
     font-size: 2rem;
     margin: 10px;
     border: none;
@@ -26,20 +27,23 @@ body{
     padding: 10px 5px;
     /* background-color: rgba(208, 151, 78, 0.919); */
 }
-.enabled{
+
+.enabled {
     background-color: rgb(12, 255, 122);
     color: black;
 }
-.hover{
+
+.hover {
     box-shadow: 2px 3px 2px rgba(19, 17, 17, 0.402);
     font-weight: bold;
 }
-.disabled{
+
+.disabled {
     background-color: white;
     color: rgba(0, 0, 0, 0.772);
 }
 
-.options button{
+.options button {
     border: none;
     border-radius: 280px;
     background-color: hsl(240, 100%, 50%);
@@ -48,34 +52,96 @@ body{
     cursor: pointer;
     margin: 0 10px;
     padding: 15px;
-    text-align: center  ;
+    text-align: center;
     box-shadow: 1px 5px 4px hsla(240, 44%, 23%, 0.612);
 }
-.options button:hover{
+
+.options button:hover {
     background-color: hsla(217, 93%, 49%, 0.923);
 }
-#playerDisplay, #computerDisplay{
+
+#playerDisplay,
+#computerDisplay {
     font-size: 2.9rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 8px 0;
     text-decoration: none;
 }
-#Result{
+
+#Result {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4rem;
     font-weight: bold;
     margin: 10px 10px;
 }
-#ScoreDisplay{
+
+.ScoreDisplay {
     font-size: 3.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 5px;
     padding: 5px;
     min-height: max-content;
 }
-.greenTXT, #playerScore{
+
+.greenTXT,
+#playerScore {
     color: rgba(29, 245, 13, 0.831);
 }
-.redTXT, #computerScore{
+
+.redTXT,
+#computerScore {
     color: red;
+}
+
+.slider {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+    margin: 0 auto;
+    border-radius: 75px;
+}
+
+img.displaySlide {
+    display: block;
+    animation: fade 1.5s ease-in-out;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 40%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.prev {
+    left: 0px;
+    background-color: rgba(83, 83, 83, 0.656);
+}
+
+.next {
+    right: 0px;
+    background-color: rgba(83, 83, 83, 0.656);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5
+    }
+
+    to {
+        opacity: 1;
+    }
 }

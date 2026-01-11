@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <link rel="icon" href="images/ace,sabo,luffy.jpg">
     <title>JavaScript</title>
 </head>
+
 <body>
     <div class="back">
-        <a href="index4.html"><p id="back">back</p></a>
+        <a href="index4.html">
+            <p id="back">back</p>
+        </a>
     </div>
     <button id="myButton">Button</button>
     <br>
@@ -24,13 +28,22 @@
     <div id="computerDisplay">ComputerChoice: </div>
     <div id="Result"></div>
     <br>
-    <div id="ScoreDisplay">Player Score:
+    <div class="ScoreDisplay">Player Score:
         <span id="playerScore">0</span>
     </div>
-    <div id="ScoreDisplay">Computer Score:
+    <div class="ScoreDisplay">Computer Score:
         <span id="computerScore">0</span>
     </div>
-    <br>
+    <div class="slider">
+        <div class="slides">
+            <img src="images/Dice-Images/1dice.png" alt="img1">
+            <img src="images/Dice-Images/2dice.png" alt="img2">
+            <img src="images/Dice-Images/3dice.png" alt="img3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
     <script src="script11.js"></script>
 </body>
+
 </html>

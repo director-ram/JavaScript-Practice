@@ -138,5 +138,9 @@ SCRIPT11.JS:
     -Class List
 
     -Rock,Paper,Scissors(practice program)
+    
+    -Image Slider(practice program)
+
+    -Callback Hell
 
 new topics will we updated...., stay tuned!!🤗🤗
