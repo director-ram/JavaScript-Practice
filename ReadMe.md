@@ -143,4 +143,6 @@ SCRIPT11.JS:
 
     -Callback Hell
 
+    -Promise
+
 new topics will we updated...., stay tuned!!🤗🤗

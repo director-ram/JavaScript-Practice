@@ -189,3 +189,68 @@ task1(() => {
         });
     });
 });
+
+
+
+// ---Promise---
+// An object that messages  asynchronus operations. Wrap a promise Object around {asynchronous code}
+// "I promise to return a value"
+// PENDING -> RESOLVED or REJECTED
+// new promise((resolve, reject) => {asynchronous code})
+// Order:-
+// 1. create a promise
+// 2. consume a promise
+// 3. handle a promise
+
+function walkDog() {
+    return new Promise((resolve, reject) => { // using promise to handle asynchronus code
+        setTimeout(() => {
+            const wlakedDog = true;
+            if (wlakedDog) {
+                resolve("You Walk the Dog");
+            }
+            else {
+                reject("You didnt walk the Dog");
+            }
+        }, 1000);
+    })
+}
+function takeOutTrash() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const trashTakenOut = true;
+            if (trashTakenOut) {
+                resolve("You take out Trash");
+            }
+            else {
+                reject("You didnt take the Trash out");
+            }
+        }, 2000);
+    })
+}
+function cleanKitchen() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const kitchenCleaned = true;
+            if (kitchenCleaned) {
+                resolve("You clean the kitchen");
+            }
+            else {
+                reject("You did not clean the kitchen");
+            }
+        }, 1500);
+    })
+}
+// using method chaining
+walkDog().then(value => { // value takes the returned value from the function
+    console.log(value);
+    return takeOutTrash();
+}).then(value => { // value becomes next function that returned at the end
+    console.log(value);
+    return cleanKitchen();
+}).then(value => {
+    console.log(value);
+    console.log("You completed all chores");
+}).catch(error => { // catch gets the value of reject and passes it as error
+    console.error(error);
+})
