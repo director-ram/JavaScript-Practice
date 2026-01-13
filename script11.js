@@ -242,15 +242,39 @@ function cleanKitchen() {
     })
 }
 // using method chaining
-walkDog().then(value => { // value takes the returned value from the function
-    console.log(value);
-    return takeOutTrash();
-}).then(value => { // value becomes next function that returned at the end
-    console.log(value);
-    return cleanKitchen();
-}).then(value => {
-    console.log(value);
-    console.log("You completed all chores");
-}).catch(error => { // catch gets the value of reject and passes it as error
-    console.error(error);
-})
+
+// walkDog().then(value => { // value takes the returned value from the function
+//     console.log(value);
+//     return takeOutTrash();
+// }).then(value => { // value becomes next function that returned at the end
+//     console.log(value);
+//     return cleanKitchen();
+// }).then(value => {
+//     console.log(value);
+//     console.log("You completed all chores");
+// }).catch(error => { // catch gets the value of reject and passes it as error
+//     console.error(error);
+// })
+
+
+
+// ---Async/Await---
+// Async = makes a function return a Promise
+// Await = makes an async function wait for a promise
+// Allows you write asynchronous code in a synchronous, Async doesnt have resolve or reject  paramaters
+// Everything after Await is placed in an event queue
+
+async function doChores() {  // instead of using method chaining we can use async/await, it improves code readability
+    try {
+        const chore1 = await walkDog();
+        console.log(chore1);
+        const chore2 = await takeOutTrash();
+        console.log(chore2);
+        const chore3 = await cleanKitchen();
+        console.log(chore3);
+        console.log("You completed all chores");
+    } catch (error) {
+        console.error(error);
+    }
+}
+doChores();
