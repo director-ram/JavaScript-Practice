@@ -278,3 +278,24 @@ async function doChores() {  // instead of using method chaining we can use asyn
     }
 }
 doChores();
+
+
+
+// ---JSON---
+// JavaScript Object Notation
+// Used for exchaing data between a server and a web application JSON files {key:value} or [value1, value2, value3]
+
+// JSON.stringify() = converts a JavaScript object into a JSON string
+// JSON.parse() = converts a JSON string into a JavaScript object
+
+const people = [{ name: "Mad", age: 48, isStudent: false },
+{ name: "Sameer", age: 36, isStudent: false },
+{ name: "Narendra", age: 50, isStudent: false },
+{ name: "Hemasai", age: 22, isStudent: true }
+];
+
+const jsonPeople = JSON.stringify(people);
+console.log(jsonPeople);
+
+const parsedPeople = JSON.parse(jsonPeople);
+console.log(parsedPeople);
