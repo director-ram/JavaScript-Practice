@@ -299,3 +299,39 @@ console.log(jsonPeople);
 
 const parsedPeople = JSON.parse(jsonPeople);
 console.log(parsedPeople);
+
+
+
+// ---fetch---
+// function used for making HTTP requests to fetch resources.(JSON style data, images, files)
+// Simplifies asynchronous data fetching in JS and used for interacting with APIs to retrieve and send data asynchronously over the web.
+// fetch(url, {method: "Options"}) options: PUT, GET, POST, DELETE
+
+async function getPokemon() {
+    const pokemonInput = document.getElementById("pokemonName");
+    const pokemonName = pokemonInput.value.toLowerCase().trim();
+    const errorDisplay = document.getElementById("errorDisplay");
+
+    if (!pokemonName) {
+        console.error("Please enter a pokemon name");
+        errorDisplay.textContent = "Please enter a pokemon name";
+        return;
+    }
+
+    try {
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+
+        if (!response.ok) {
+            throw new Error("Could not fetch data");
+        }
+        const data = await response.json();
+        const pokemonSprite = data.sprites.front_default;
+        const imgElement = document.getElementById("pokemonDisplay");
+        imgElement.src = pokemonSprite;
+        imgElement.style.display = "block";
+        console.log(data.name);
+    }
+    catch (error) {
+        console.error(error);
+    }
+}

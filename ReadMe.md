@@ -149,4 +149,6 @@ SCRIPT11.JS:
 
     -JSON
 
+    -Fetch API
+
 new topics will we updated...., stay tuned!!🤗🤗
