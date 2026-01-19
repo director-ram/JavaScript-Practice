@@ -155,4 +155,5 @@ SCRIPT12.JS:
 
     -Weather App(practice program)
 
-new topics will we updated...., stay tuned!!🤗🤗
+
+This is the JavaScript Full course repo with programing examples, Thanks for visiting 🤗🤗
