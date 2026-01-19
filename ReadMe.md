@@ -151,4 +151,8 @@ SCRIPT11.JS:
 
     -Fetch API
 
+SCRIPT12.JS:
+
+    -Weather App(practice program)
+
 new topics will we updated...., stay tuned!!🤗🤗
