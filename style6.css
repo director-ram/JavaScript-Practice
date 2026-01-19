@@ -1,0 +1,108 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsla(261, 79%, 85%, 0.995);
+    margin: 0;
+}
+
+.back {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+}
+
+.weatherForm {
+    margin-top: 20px;
+}
+
+.cityInput {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(11, 163, 245, 0.915);
+    font-size: 1.2rem;
+    width: 250px;
+    color: rgb(53, 255, 22);
+    margin: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    background-color: greenyellow;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+}
+
+.weatherInfo {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    background-color: linear-gradient(270deg, hsl(40, 100%, 80%), hsl(205, 100%, 80%));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.295);
+    border: 1px solid rgba(231, 197, 26, 0.763);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 1.5rem;
+}
+
+.cityDisplay,
+.tempDisplay {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+
+.humidityDisplay {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.conditionDisplay {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.windSpeedDisplay {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.errorDisplay {
+    color: red;
+    font-size: 1.5rem;
+    margin: 10px;
+    display: none;
+}
+
+.iconDisplay {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
