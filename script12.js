@@ -1,7 +1,9 @@
+// linked to index6.html
+
 const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityInput");
 const weatherInfo = document.querySelector(".weatherInfo");
-const API_KEY = "efb02ebe1774225d610d97e3cf3ebd8c";
+// API_KEY is provided by config.js
 weatherForm.addEventListener("submit", async event => {
     event.preventDefault();
     const city = cityInput.value;
@@ -52,7 +54,7 @@ function displayWeatherInfo(data) {
     humidityDisplay.textContent = `Humidity: ${humidity}%`;
     conditionDisplay.textContent = description;
     windSpeedDisplay.textContent = `Wind Speed: ${speed}km/h`;
-    iconDisplay.textContent = getWeatherIcon(id);
+    iconDisplay.textContent = getWeatherIcon(id, temp);
     errorDisplay.textContent = "";
     weatherInfo.appendChild(cityDisplay);
     weatherInfo.appendChild(tempDisplay);
@@ -62,33 +64,39 @@ function displayWeatherInfo(data) {
     weatherInfo.appendChild(iconDisplay);
     weatherInfo.appendChild(errorDisplay);
 }
-function getWeatherIcon(weatherId) {
-    switch (weatherId) {
-        case (weatherId > 200 && weatherId < 300):
+function getWeatherIcon(weatherId, temp) {
+    if (temp <= 0) {
+        return "🥶❄️";
+    }
+
+    switch (true) {
+        case (weatherId >= 200 && weatherId < 300):
             return "⛈️";
-        case (weatherId > 300 && weatherId < 400):
+        case (weatherId >= 300 && weatherId < 400):
             return "🌦️";
-        case (weatherId > 500 && weatherId < 600):
+        case (weatherId >= 500 && weatherId < 600):
             return "🌧️☔";
-        case (weatherId > 600 && weatherId < 700):
+        case (weatherId >= 600 && weatherId < 700):
             return "❄️";
-        case (weatherId > 700 && weatherId < 800):
+        case (weatherId >= 700 && weatherId < 800):
             return "🌫️";
-        case (weatherId > 800 && weatherId < 810):
-            return "☀️";
         case (weatherId === 800):
             return "🌞";
+        case (weatherId >= 801 && weatherId <= 804):
+            return "☁️";
         default:
             return "❓";
     }
 }
 
 function displayError(message) {
-    errorDisplay.classList.add("errorDisplay");
     const errorDisplay = document.querySelector(".errorDisplay");
+    errorDisplay.classList.add("errorDisplay");
+    weatherInfo.style.display = "none";
     errorDisplay.textContent = message;
     errorDisplay.style.display = "block";
     setTimeout(() => {
         errorDisplay.textContent = "";
+        weatherInfo.style.display = "flex";
     }, 5000);
 }

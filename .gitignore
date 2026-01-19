@@ -1,0 +1,16 @@
+# Environment variables
+.env
+config.js
+.env.local
+.env.*.local
+
+# Dependency directories
+node_modules/
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+Thumbs.db
+.DS_Store
