@@ -6,13 +6,13 @@
 
 HTML & CSS has basic syntax's, this repo will mostly contains of JavaScript topics, more topics will be covered in future.
 
-SCRIPT.JS:
+##SCRIPT.JS:
 
     -basics on JS syntax with examples and datatypes.
 
     -condtional statements, Basics of DOM(document object manipulation), variable declaration, basic idea of function
 
-SCRIPT2.JS:
+##SCRIPT2.JS:
 
     -small practice program
 
@@ -22,11 +22,11 @@ SCRIPT2.JS:
 
     -operators
 
-SCRIPT3.JS:
+##SCRIPT3.JS:
 
     -all types of Loops
 
-SCRIPT4.JS:
+##SCRIPT4.JS:
 
     -number guessing game(practice program)
 
@@ -38,7 +38,7 @@ SCRIPT4.JS:
 
     -Array
 
-SCRIPT5.JS:
+##SCRIPT5.JS:
 
     -Spread operator
 
@@ -46,7 +46,7 @@ SCRIPT5.JS:
 
     -Dice Roller(practice program)
 
-SCRIPT6.JS:
+##SCRIPT6.JS:
 
     -Random Password Generator(practice program)
 
@@ -62,7 +62,7 @@ SCRIPT6.JS:
 
     -function expression
 
-SCRIPT7.JS:
+##SCRIPT7.JS:
 
     -Arrow Functions
 
@@ -80,7 +80,7 @@ SCRIPT7.JS:
 
     -Super
 
-SCRIPT8.JS:
+##SCRIPT8.JS:
 
     -Getter & Setter
 
@@ -99,7 +99,7 @@ SCRIPT8.JS:
     -Closure
 
 
-SCRIPT9.JS:
+##SCRIPT9.JS:
     
     -setTimeout & clearTimeout
 
@@ -114,7 +114,7 @@ SCRIPT9.JS:
     -Error Handling
 
 
-SCRIPT10.JS:
+##SCRIPT10.JS:
     
     -Calculator(practice program)
 
@@ -133,7 +133,7 @@ SCRIPT10.JS:
     -NodeList
 
 
-SCRIPT11.JS:
+##SCRIPT11.JS:
 
     -Class List
 
@@ -151,9 +151,20 @@ SCRIPT11.JS:
 
     -Fetch API
 
-SCRIPT12.JS:
+##SCRIPT12.JS:
 
     -Weather App(practice program)
 
+**Practice_challenges**
+    - This folder contains practice challenges
+
+    ##Beginner
+        - This folder contains beginner level challenges
+
+    ##Intermediate
+        - This folder contains intermediate level challenges
+
+    ##Advanced
+        - This folder contains advanced level challenges
 
 This is the JavaScript Full course repo with programing examples, Thanks for visiting 🤗🤗
