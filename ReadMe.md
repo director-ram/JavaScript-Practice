@@ -167,4 +167,6 @@ HTML & CSS has basic syntax's, this repo will mostly contains of JavaScript topi
     ##Advanced
         - This folder contains advanced level challenges
 
-This is the JavaScript Full course repo with programing examples, Thanks for visiting 🤗🤗
+This is the JavaScript Full course repo with programing examples, more practice challenges will be added soon
+
+                Thanks for visiting 🤗🤗
