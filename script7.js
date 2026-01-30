@@ -27,7 +27,7 @@ const person1 = {
     lastName: "Kumar",
     age: 21,
     isEmployeed: false,
-    sayHello: () => console.log(`Hi!, im Neeraj Kumar,nice to meet you.`),
+    sayHello: () => console.log(`Hi!, im ${this.firstName} ${this.lastName},nice to meet you.`),
 }
 
 person1.sayHello();
@@ -42,7 +42,7 @@ const person2 = {
     firstName: "Madhusudan",
     lastName: "Reddy",
     age: 21,
-    sayHello: function(){console.log(`Hi!, im ${this.firstName} ${this.lastName},nice to meet you.`)},// THIS helps to access properties or keys and there values inside the object
+    sayHello: function () { console.log(`Hi!, im ${this.firstName} ${this.lastName},nice to meet you.`) },// THIS helps to access properties or keys and there values inside the object
     eat: () => console.log(`im eating...`),
 }
 
@@ -54,21 +54,21 @@ console.log(person2.age);
 
 // ---Constructors---
 // A special method for defining properties and methods of objects
-function Cars(brand, model, year, color){
+function Cars(brand, model, year, color) {
     this.brand = brand,// this creates a constructor
-    this.model = model,
-    this.year = year,
-    this.color = color,
-    this.drive = function(){
-        console.log(`You drive ${this.brand} ${this.model}`)//u can write 'this["brand"]'like this as well
-    }
+        this.model = model,
+        this.year = year,
+        this.color = color,
+        this.drive = function () {
+            console.log(`You drive ${this.brand} ${this.model}`)//u can write 'this["brand"]'like this as well
+        }
 }
 
 const cars1 = new Cars("Ford", "Mustang", 2021, "black");
 const cars2 = new Cars("Toyota", "Supra", 2023, "white");
-const cars3 = new Cars("BMW", "M4", 2024,"blue");
+const cars3 = new Cars("BMW", "M4", 2024, "blue");
 
-console.log(cars1.brand,cars2.model,cars3.color);
+console.log(cars1.brand, cars2.model, cars3.color);
 cars1.drive();
 cars2.drive();
 cars3.drive();
@@ -80,18 +80,18 @@ cars3.drive();
 //compared to the traditonal constructor functions 
 //ex: static keyword, encapsulation, inheritence
 
-class Product{
-    constructor(item, price){
+class Product {
+    constructor(item, price) {
         this.item = item;
         this.price = price;
     }
 
-    displayProducts(){
+    displayProducts() {
         console.log(`Item: ${this.item}`);
         console.log(`Price: ₹${this.price.toFixed(2)}`);
     }
 
-    taxes(salesTax){
+    taxes(salesTax) {
         return this.price + (this.price * salesTax);
     }
 }
@@ -113,14 +113,14 @@ console.log(`The total price with tax is: ${Cart.toFixed(2)}`);
 //A keyword that defines properties or methods that belong to a class
 //itself rather than the objects created from that class
 
-class Maths{
+class Maths {
     static PI = 3.141;
 
-    static getDiameter(radius){
+    static getDiameter(radius) {
         return radius * 2;
     }
 
-    static getArea(radius){
+    static getArea(radius) {
         return this.PI * radius * radius
     }
 }
@@ -131,24 +131,24 @@ console.log(Maths.getDiameter(r).toFixed(1));//without creating an object we can
 console.log(Maths.getArea(r).toFixed(1));
 
 //Example:
-class User{
+class User {
     static count = 0;
-    constructor(userName){
+    constructor(userName) {
         this.userName = userName;
         User.count++;
     }
-    displayName(){
+    displayName() {
         console.log(`Hi, im ${this.userName}!`);
     }
 
-    static deleteUser(){
+    static deleteUser() {
         console.log(`Your username has been deleted!!`);
         User.count--;
         console.log(User.count);
     }
 }
 const user1 = new User("Hemasai");
-const  user2 = new User("Madhu");
+const user2 = new User("Madhu");
 user1.displayName();
 user2.displayName();
 User.deleteUser();
@@ -161,52 +161,52 @@ console.log(`the current user count is ${User.count}`);
 //helps with code reusability
 //example:
 
-class Animal{
+class Animal {
     Alive = true;
 
-    constructor(animal, age, speed){
+    constructor(animal, age, speed) {
         this.animal = animal;
         this.age = age;
         this.speed = speed;
     }
 
-    eat(){
+    eat() {
         console.log(`the ${this.animal} is eating...`);
     }
 
-    sleep(){
+    sleep() {
         console.log(`the ${this.animal} is sleeping...`);
     }
 
-    bark(){
+    bark() {
         console.log(`the ${this.animal} is barking...`);
     }
 
-    roar(){
+    roar() {
         console.log(`the ${this.animal} is roaring...`);
     }
 }
 
-class Lion extends Animal{
+class Lion extends Animal {
     animal = "Lion";
 
-    running(){
+    running() {
         console.log(`the ${this.animal} is running...`);
     }
 }
 
-class Dog extends Animal{
+class Dog extends Animal {
     animal = "Dog";
 
-    running(){
+    running() {
         console.log(`the ${this.animal} is running...`);
     }
 }
 
-class Cat extends Animal{
+class Cat extends Animal {
     animal = "Cat";
 
-    running(){
+    running() {
         console.log(`the ${this.animal} is running...`);
     }
 }
@@ -231,34 +231,34 @@ cat.eat();
 //this = this object
 //super = the parent
 
-class Rabbit extends Animal{
-    constructor(animal, age, speed){
+class Rabbit extends Animal {
+    constructor(animal, age, speed) {
         super(animal, age, speed);
     }
 
-    details(){
+    details() {
         console.log(`the animal is:${this.animal} of age:${this.age} runs at a speed of ${this.speed}kmph`);
         super.eat();
     }
 }
 
-class Fish extends Animal{
-    constructor(animal, age, speed){
+class Fish extends Animal {
+    constructor(animal, age, speed) {
         super(animal, age, speed);
     }
 
-    details(){
+    details() {
         console.log(`the animal is:${this.animal} of age:${this.age} swims at a speed of ${this.speed}kmph`);
         super.sleep();
     }
 }
 
-class Hawk extends Animal{
-    constructor(animal, age, speed){
+class Hawk extends Animal {
+    constructor(animal, age, speed) {
         super(animal, age, speed);
     }
 
-    details(){
+    details() {
         console.log(`the animal is:${this.animal} of age:${this.age} Fly's at a speed of ${this.speed}kmph`);
     }
 }
