@@ -27,7 +27,7 @@ const person1 = {
     lastName: "Kumar",
     age: 21,
     isEmployeed: false,
-    sayHello: () => console.log(`Hi!, im ${this.firstName} ${this.lastName},nice to meet you.`),
+    sayHello: () => console.log(`Hi!, im Neeraj Kumar,nice to meet you.`),
 }
 
 person1.sayHello();
