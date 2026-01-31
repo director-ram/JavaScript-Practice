@@ -205,8 +205,8 @@ task1(() => {
 function walkDog() {
     return new Promise((resolve, reject) => { // using promise to handle asynchronus code
         setTimeout(() => {
-            const wlakedDog = true;
-            if (wlakedDog) {
+            const walkedDog = true;
+            if (walkedDog) {
                 resolve("You Walk the Dog");
             }
             else {
@@ -335,3 +335,33 @@ async function getPokemon() {
         console.error(error);
     }
 }
+
+
+
+// --cookie---
+// A small text file stored on your computer by a web browser.
+// Used to store user preferences, login information, and other data.
+// saved in name:value pairs
+
+function setCookie(name, value, daysToLive) {
+    const date = new Date();
+    date.setTime(date.getTime() + (daysToLive * 24 * 60 * 60 * 1000));
+    const expires = "expires" + date.toLocaleDateString();
+    document.cookie = `${name}=${value}; ${expires}; path=/;`;
+}
+
+function getCookie(name) {
+    const cookieDecoded = decodeURIComponent(document.cookie);
+    const cookieArray = cookieDecoded.split("; ");
+    return cookieArray.find(cookie => cookie.startsWith(`${name}=`));
+}
+
+function deleteCookie(name) {
+    setCookie(name, null, null);
+}
+
+setCookie("username", "hemasai", 365);
+setCookie("name", "Mad", 365);
+console.log(getCookie("name"));
+deleteCookie("username");
+console.log(document.cookie);

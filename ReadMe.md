@@ -151,6 +151,8 @@ HTML & CSS has basic syntax's, this repo will mostly contains of JavaScript topi
 
     -Fetch API
 
+    -Cookies
+
 ##SCRIPT12.JS:
 
     -Weather App(practice program)
