@@ -10,7 +10,7 @@ USE college(database name);
 ## To alter DB #
 ALTER DATABASE college READ ONLY = 1;
 in read only mode we cannot make changes in database.
--- to disable read only
+to disable read only
 ALTER DATABASE college READ ONLY = 0;
 
 ## To delete or drop DB ##
@@ -26,7 +26,7 @@ CREATE TABLE students (
     last_name VARCHAR(50),
     branch VARCHAR(50)
 );
--- to view tha table
+- to view tha table
 SELECT * FROM students;
 
 ## TO Rename The Table ##
@@ -62,8 +62,8 @@ TRUNCATE TABLE teachers;
 
 ## To insert rows ##
 INSERT INTO teachers
-VALUES (1,"rahul","kumar","50000","[EMAIL_ADDRESS]")
-(2,"geeta","sharma","60000","[EMAIL_ADDRESS]");
+VALUES (1,"rahul","kumar","50000","ECE","[EMAIL_ADDRESS]")
+(2,"geeta","sharma","60000","CSE","[EMAIL_ADDRESS]");
 - to insert values only in certain columns
 INSERT INTO teachers(staff_id,first_name,last_name)
 VALUES (3,"virat","kohli");
@@ -73,3 +73,11 @@ SELECT first_name,last_name FROM teachers;
 - where clause
 SELECT * FROM teachers
 WHERE staff_id >= 1;
+
+## To update data in tables ##
+UPDATE teachers
+SET salary = "55000",branch="EEE",email="[EMAIL_ADDRESS]" WHERE staff_id = 3;
+
+## To DELETE rows ##
+DELETE FROM teachers
+WHERE staff_id = 3;
