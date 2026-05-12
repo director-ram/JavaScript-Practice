@@ -39,9 +39,37 @@ DROP TABLE teachers;
 ALTER TABLE teachers
 ADD salary VARCHAR(50);
 
+ALTER TABLE teachers
+ADD email VARCHAR(50);
+
 ## To rename a column ##
 ALTER TABLE teachers
 RENAME COLUMN reg_no TO staff_id;
 - to modify a datatype of column
 ALTER TABLE teachers
-MODIFY COLUMN staff_id VARCHAR(100);
+MODIFY COLUMN staff_id INT;
+- to move colum around
+ALTER TABLE teachers
+MODIFY salary VARCHAR(50) AFTER last_name;(use FIRST to make it move to first column)
+
+## To drop a column ##
+ALTER TABLE teachers
+DROP COLUMN email;
+
+## TRUNCATE ##
+- it is used to delete all the data present in the table but it will not delete the table.
+TRUNCATE TABLE teachers;
+
+## To insert rows ##
+INSERT INTO teachers
+VALUES (1,"rahul","kumar","50000","[EMAIL_ADDRESS]")
+(2,"geeta","sharma","60000","[EMAIL_ADDRESS]");
+- to insert values only in certain columns
+INSERT INTO teachers(staff_id,first_name,last_name)
+VALUES (3,"virat","kohli");
+
+## To select specific columns ##
+SELECT first_name,last_name FROM teachers;
+- where clause
+SELECT * FROM teachers
+WHERE staff_id >= 1;
