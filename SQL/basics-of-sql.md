@@ -118,3 +118,17 @@ ADD CONSTRAINT UNIQUE (product_name);
 - To drop unique constraint
 ALTER TABLE products
 DROP CONSTRAINT UNIQUE (product_name);
+
+## To set NOT NULL ##
+CREATE TABLE products(
+    product_id INT,
+    product_name VARCHAR(20),
+    product_price DECIMAL(4, 2) NOT NULL
+);
+- Or you can alter after creating the table
+ALTER TABLE products
+ADD CONSTRAINT NOT NULL (product_price);
+
+- To drop NOT NULL constraint
+ALTER TABLE products
+DROP CONSTRAINT NOT NULL (product_price);
