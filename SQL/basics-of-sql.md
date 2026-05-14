@@ -62,7 +62,7 @@ TRUNCATE TABLE teachers;
 
 ## To insert rows ##
 INSERT INTO teachers
-VALUES (1,"rahul","kumar","50000","ECE","[EMAIL_ADDRESS]")
+VALUES (1,"rahul","kumar","50000","ECE","[EMAIL_ADDRESS]"),
 (2,"geeta","sharma","60000","CSE","[EMAIL_ADDRESS]");
 - to insert values only in certain columns
 INSERT INTO teachers(staff_id,first_name,last_name)
@@ -81,3 +81,40 @@ SET salary = "55000",branch="EEE",email="[EMAIL_ADDRESS]" WHERE staff_id = 3;
 ## To DELETE rows ##
 DELETE FROM teachers
 WHERE staff_id = 3;
+
+## To turn off auto-commit ##
+SET AUTOCOMMIT = OFF;
+
+## To turn on auto-commit ##
+SET AUTOCOMMIT = ON;
+
+## To save the data ##
+COMMIT;
+
+## To undo the data ##
+ROLLBACK;
+
+## To get date & time ##
+- example:
+CREATE TABLE test (
+    my_date DATE,
+    my_time TIME,
+    my_datetime DATETIME
+);
+INSERT INTO test
+VALUES (CURRENT_DATE(), CURRENT_TIME(), NOW());
+SELECT * FROM test;
+
+## To set unique constraint ##
+CREATE TABLE products(
+    product_id INT,
+    product_name VARCHAR(20) UNIQUE,
+    product_price DECIMAL(4, 2)
+);
+- Or you can alter after creating the table
+ALTER TABLE products
+ADD CONSTRAINT UNIQUE (product_name);
+
+- To drop unique constraint
+ALTER TABLE products
+DROP CONSTRAINT UNIQUE (product_name);
