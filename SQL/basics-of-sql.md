@@ -132,3 +132,44 @@ ADD CONSTRAINT NOT NULL (product_price);
 - To drop NOT NULL constraint
 ALTER TABLE products
 DROP CONSTRAINT NOT NULL (product_price);
+
+## Check constraint ##
+- can be used to limit the values
+CREATE TABLE employees (
+    employee_id INT,
+    employee_name VARCHAR(30),
+    hire_date DATE,
+    salary DECIMAL(6, 2),
+    CONSTRAINT chk_salary CHECK (salary >= 10000.00)
+);
+
+## To use default ##
+CREATE TABLE orders(
+    order_id INT,
+    order_name VARCHAR(20),
+    order_date DATETIME DEFAULT NOW()
+);
+- or to apply existing table
+ALTER TABLE orders
+ALTER order_date SET DEFAULT NOW();
+
+## TO drop default ##
+ALTER TABLE orders
+ALTER order_date DROP DEFAULT;
+
+## PRIMARY KEY ##
+- it uniquely identifies each row in the table
+- no null values are allowed
+- only one primary key is allowed per table
+CREATE TABLE students(
+    reg_no INT PRIMARY KEY,
+    first_name VARCHAR(20),
+    last_name VARCHAR(20)
+);
+- or to apply existing table
+ALTER TABLE students
+ADD PRIMARY KEY (reg_no);
+
+## To drop primary key ##
+ALTER TABLE students
+DROP PRIMARY KEY;

@@ -95,11 +95,11 @@ CREATE TABLE products(
     product_name VARCHAR(20) UNIQUE,
     product_price DECIMAL(4, 2)
 );
-- Or you can alter after creating the table
+-- Or you can alter after creating the table
 ALTER TABLE products
 ADD CONSTRAINT UNIQUE (product_name);
 
-- To drop unique constraint
+-- To drop unique constraint
 ALTER TABLE products
 DROP CONSTRAINT UNIQUE (product_name);
 
@@ -109,10 +109,54 @@ CREATE TABLE products(
     product_name VARCHAR(20),
     product_price DECIMAL(4, 2) NOT NULL
 );
-- Or you can alter after creating the table
+-- Or you can alter after creating the table
 ALTER TABLE products
 ADD CONSTRAINT NOT NULL (product_price);
 
-- To drop NOT NULL constraint
+-- To drop NOT NULL constraint
 ALTER TABLE products
 DROP CONSTRAINT NOT NULL (product_price);
+
+-- To use check
+CREATE TABLE employees (
+    employee_id INT,
+    employee_name VARCHAR(30),
+    hire_date DATE,
+    salary DECIMAL(6, 2),
+    CONSTRAINT chk_salary CHECK (salary >= 10000.00)
+);
+-- Or to add existing table
+ALTER TABLE employees
+ADD CONSTRAINT chk_salary CHECK (salary >= 10000.00);
+
+-- To drop check constraint
+ALTER TABLE employees
+DROP CONSTRAINT chk_salary;
+
+-- To use default
+CREATE TABLE orders(
+    order_id INT,
+    order_name VARCHAR(20),
+    order_date DATETIME DEFAULT NOW()
+);
+-- or to apply on existing table
+ALTER TABLE orders
+ALTER order_date SET DEFAULT NOW();
+
+-- To drop default
+ALTER TABLE orders
+ALTER order_date DROP DEFAULT;
+
+-- To create primary key
+CREATE TABLE students(
+    reg_no INT PRIMARY KEY,
+    first_name VARCHAR(20),
+    last_name VARCHAR(20)
+);
+-- or to apply existing table
+ALTER TABLE students
+ADD PRIMARY KEY (reg_no);
+
+-- To drop primary key
+ALTER TABLE students
+DROP PRIMARY KEY;
