@@ -173,3 +173,47 @@ ADD PRIMARY KEY (reg_no);
 ## To drop primary key ##
 ALTER TABLE students
 DROP PRIMARY KEY;
+
+## AUTO INCREMENT ##
+- used to auto increment the values in the column that has primary key.
+CREATE TABLE students(
+    reg_no INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(20),
+    last_name VARCHAR(20)
+);
+
+## FOREIGN KEY ##
+- it is used to refer to the primary key of the other table
+- it is used to create relationship between tables
+- only one foreign key is allowed per table
+CREATE TABLE courses(
+    course_id INT PRIMARY KEY AUTO_INCREMENT,
+    course_name VARCHAR(20),
+    reg_no INT,
+    FOREIGN KEY (reg_no) REFERENCES students(reg_no)
+);
+
+- or to create after creating the table
+ALTER TABLE courses
+ADD CONSTRAINT fk_reg_no
+FOREIGN KEY (reg_no) REFERENCES students(reg_no);
+
+## JOINS ##
+- joins are used to combine data from two or more tables.
+- there are 4 types of joins:
+    - INNER JOIN
+    - LEFT JOIN
+    - RIGHT JOIN
+    - FULL OUTER JOIN
+
+## INNER JOIN ##
+- it is used to select all the rows that have matching values in both tables.
+
+## LEFT JOIN ##
+- it is used to select all the rows from the left table and the matching values from the right table.
+
+## RIGHT JOIN ##
+- it is used to select all the rows from the right table and the matching values from the left table.
+
+## SELF JOIN ##
+- it is used to join a table with itself.

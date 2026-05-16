@@ -160,3 +160,42 @@ ADD PRIMARY KEY (reg_no);
 -- To drop primary key
 ALTER TABLE students
 DROP PRIMARY KEY;
+
+-- using auto increment
+CREATE TABLE students(
+    reg_no INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(20),
+    last_name VARCHAR(20)
+);
+
+-- using foreign key
+CREATE TABLE courses(
+    course_id INT PRIMARY KEY AUTO_INCREMENT,
+    course_name VARCHAR(20),
+    reg_no INT,
+    FOREIGN KEY (reg_no) REFERENCES students(reg_no)
+);
+
+-- or to create after creating the table
+ALTER TABLE courses
+ADD CONSTRAINT fk_reg_no
+FOREIGN KEY (reg_no) REFERENCES students(reg_no);
+
+-- Using Joins
+-- inner join
+SELECT *
+FROM courses
+INNER JOIN students
+ON courses.reg_no = students.reg_no;
+
+-- left join
+SELECT *
+FROM courses
+LEFT JOIN students
+ON courses.reg_no = students.reg_no;
+
+-- right join
+SELECT *
+FROM courses
+RIGHT JOIN students
+ON courses.reg_no = students.reg_no;
