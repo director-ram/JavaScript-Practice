@@ -217,3 +217,34 @@ FOREIGN KEY (reg_no) REFERENCES students(reg_no);
 
 ## SELF JOIN ##
 - it is used to join a table with itself.
+
+## Functions ##
+- used to perform operations on data
+- examples:
+    - COUNT()
+    - MAX()
+    - MIN()
+    - AVG()
+    - SUM()
+    - CONCAT()
+    - LENGTH()
+
+## LIMIT ##
+- used to limit the number of rows returned by the query.
+
+## Logical operators ##
+- AND
+- OR
+- NOT
+- BETWEEN
+- IN
+- LIKE
+- REGEXP
+
+## Wildcard characters ##
+- % : represents zero or more characters
+- _ : represents a single character
+- [] : represents a range of characters
+- [^] : represents a range of characters
+- [!] : represents a range of characters
+- used to substitute one or more characters in a string.

@@ -199,3 +199,67 @@ SELECT *
 FROM courses
 RIGHT JOIN students
 ON courses.reg_no = students.reg_no;
+
+-- functions
+SELECT COUNT(reg_no) AS "No.of students"
+FROM students;
+
+SELECT MAX(salary) AS "Highest salary"
+FROM teacher;
+
+SELECT MIN(salary) AS "Lowest salary"
+FROM teacher;
+
+SELECT AVG(salary) AS "Average salary"
+FROM teacher;
+
+SELECT SUM(salary) AS "Total salary"
+FROM teacher;
+
+SELECT CONCAT(first_name," ", last_name) AS full_name
+FROM students;
+
+SELECT LENGTH(first_name) AS length_of_first_name
+FROM students;
+
+-- using limit
+SELECT * FROM teacher
+LIMIT 2;
+
+-- logical operators
+SELECT * FROM teacher
+WHERE salary > 50000 AND branch = "CSE";
+
+SELECT * FROM teacher
+WHERE salary > 50000 OR branch = "CSE";
+
+SELECT * FROM teacher
+WHERE NOT salary > 50000 AND NOT branch = "ECE";
+
+SELECT * FROM teacher
+WHERE salary BETWEEN 50000 AND 60000;
+
+SELECT * FROM teacher
+WHERE branch IN ("ECE","CSE");
+
+SELECT * FROM teacher
+WHERE branch NOT IN ("ECE","CSE");
+
+SELECT * FROM teacher
+WHERE branch LIKE "E%";
+
+-- wild card
+SELECT * FROM teacher
+WHERE first_name LIKE "R%";
+
+SELECT * FROM teacher
+WHERE last_name LIKE "%s";
+
+SELECT * FROM teacher
+WHERE last_name LIKE "_s";
+
+SELECT * FROM teacher
+WHERE first_name LIKE "[A-Z]%";
+
+SELECT * FROM teacher
+WHERE first_name LIKE "[^A-Z]%";
