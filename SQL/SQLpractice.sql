@@ -263,3 +263,29 @@ WHERE first_name LIKE "[A-Z]%";
 
 SELECT * FROM teacher
 WHERE first_name LIKE "[^A-Z]%";
+
+-- OrderBy
+SELECT * FROM teacher
+ORDER BY salary;
+-- for DESC order
+SELECT * FROM teacher
+ORDER BY salary DESC;
+
+-- OFFSET
+SELECT * FROM teacher
+ORDER BY salary
+LIMIT 2, 2;
+
+-- ALIAS
+SELECT * FROM teacher
+WHERE salary > 50000 AS "Teachers with salary > 50000";
+
+-- UNION
+SELECT * FROM teacher
+UNION
+SELECT * FROM students;
+
+-- UNION ALL
+SELECT * FROM teacher
+UNION ALL
+SELECT * FROM students;

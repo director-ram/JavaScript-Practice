@@ -231,6 +231,7 @@ FOREIGN KEY (reg_no) REFERENCES students(reg_no);
 
 ## LIMIT ##
 - used to limit the number of rows returned by the query.
+- Can be used to display a large data on pages.
 
 ## Logical operators ##
 - AND
@@ -248,3 +249,20 @@ FOREIGN KEY (reg_no) REFERENCES students(reg_no);
 - [^] : represents a range of characters
 - [!] : represents a range of characters
 - used to substitute one or more characters in a string.
+
+## OrderBy ##
+- used to sort the data in ascending or descending order.
+
+## OFFSET ##
+- used to skip the rows returned by the query.
+
+## ALIAS ##
+- used to give a temporary name to a column or table.
+
+## UNION ##
+- used to combine the result of two or more queries.
+- removes duplicate rows.
+
+## UNION ALL ##
+- used to combine the result of two or more queries.
+- does not remove duplicate rows.
