@@ -266,3 +266,14 @@ FOREIGN KEY (reg_no) REFERENCES students(reg_no);
 ## UNION ALL ##
 - used to combine the result of two or more queries.
 - does not remove duplicate rows.
+
+## SELF JOIN ##
+- join another copy of a table to itself.
+- used to compare rows within the same table.
+- help to display a heirarchy of data.
+
+## views ##
+- create a virtual table based on the result set of a sql query
+- The fields in a view are fields from one or more real tables in the database.
+- Can be used to hide table structures from users.
+- They're not real tables, but can be interacted with like a table.

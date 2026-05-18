@@ -289,3 +289,18 @@ SELECT * FROM students;
 SELECT * FROM teacher
 UNION ALL
 SELECT * FROM students;
+
+-- SELF JOIN
+SELECT * FROM teacher AS t1
+INNER JOIN teacher AS t2
+ON t1.salary = t2.salary;
+
+SELECT t1.first_name, t1.last_name, CONCAT(t2.first_name, " ", t2.last_name) AS "collegue_name"
+FROM teacher AS t1
+INNER JOIN teacher AS t2
+ON t1.salary = t2.salary;
+
+-- using view
+CREATE VIEW students_attendance AS
+SELECT first_name, last_name
+FROM students;
