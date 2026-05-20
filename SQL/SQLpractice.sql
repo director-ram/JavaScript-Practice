@@ -304,3 +304,17 @@ ON t1.salary = t2.salary;
 CREATE VIEW students_attendance AS
 SELECT first_name, last_name
 FROM students;
+
+-- Index(Btree data structure)
+CREATE INDEX last_name_idx ON teacher(last_name);
+SHOW INDEXES FROM teacher;
+-- to drop index
+DROP INDEX last_name_idx ON teacher;
+-- to create multiple index
+CREATE INDEX first_name_last_name_idx ON teacher(first_name, last_name);
+SHOW INDEXES FROM teacher;
+
+-- subquery
+SELECT first_name, last_name,salary, 
+       (SELECT AVG(salary) FROM teacher) AS avg_salary
+FROM teacher;

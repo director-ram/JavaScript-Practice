@@ -277,3 +277,24 @@ FOREIGN KEY (reg_no) REFERENCES students(reg_no);
 - The fields in a view are fields from one or more real tables in the database.
 - Can be used to hide table structures from users.
 - They're not real tables, but can be interacted with like a table.
+
+## Index () ##
+- Indexes are used to find values within a specific column more quickly.
+- Creating an index may slow down the insertion of data.
+- Creating an index may take up storage space.
+- MySQL normaly searches sequentially through a column.
+
+## subquery (Nested Queries) ##
+- A subquery is a query nested inside another query.
+- It is also called as nested query.
+- The inner query is executed first, and then the outer query is executed.
+- The inner query can return a single value, a single column, or a single row.
+- The inner query can also return multiple rows and columns.
+
+## types of subqueries ##
+1. using WHERE clause - Returns a set of rows to the outer query.
+2. using FROM clause - Returns a result set that becomes a virtual table for the outer query.
+3. using SELECT clause - Returns a single value to be used in the outer query.
+4. using INSERT statement - Used to insert data into a table based on the result of another query.
+5. using UPDATE statement - Used to update data in a table based on the result of another query.
+6. using DELETE statement - Used to delete data from a table based on the result of another query.
