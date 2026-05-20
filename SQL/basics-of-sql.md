@@ -298,3 +298,11 @@ FOREIGN KEY (reg_no) REFERENCES students(reg_no);
 4. using INSERT statement - Used to insert data into a table based on the result of another query.
 5. using UPDATE statement - Used to update data in a table based on the result of another query.
 6. using DELETE statement - Used to delete data from a table based on the result of another query.
+
+## GroupBy ##
+- Used to group rows that have the same values in a column.
+- Used with aggregate functions to perform operations on grouped data.
+- ex. SUM(), MAX(), MIN(), AVG(), COUNT()
+
+## Having clause ##
+- Used to filter the result of a group by query.

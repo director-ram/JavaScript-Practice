@@ -318,3 +318,14 @@ SHOW INDEXES FROM teacher;
 SELECT first_name, last_name,salary, 
        (SELECT AVG(salary) FROM teacher) AS avg_salary
 FROM teacher;
+
+-- groupby
+SELECT SUM(salary), hire_date 
+FROM teacher 
+GROUP BY hire_date;
+
+-- having clause
+SELECT SUM(salary), hire_date, staff_id 
+FROM teacher 
+GROUP BY hire_date
+HAVING SUM(salary) > 35000 AND staff_id IS NOT NULL;
