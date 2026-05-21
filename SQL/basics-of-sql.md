@@ -314,3 +314,10 @@ FOREIGN KEY (reg_no) REFERENCES students(reg_no);
 ## On DELETE ##
 - ON DELETE SET NULL = when a FK(foreign key) is deleted, replace FK with null
 - ON DELETE CASCADE = when a FK is deleted, delete row
+
+## Stored procedure ##
+- is prepared SQL code that you can save and great if theres a query that you write often
+- reduces network traffic
+- increases performance
+- secure, admin can grant permission to use
+- increases memory usage of every connection

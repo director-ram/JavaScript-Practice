@@ -345,3 +345,26 @@ ALTER TABLE student
 ADD CONSTRAINT fk_reg_no
 FOREIGN KEY(reg_no) REFERENCES student(reg_no)
 ON DELETE CASCADE;
+
+-- stored procedure
+DELIMITER $$ --used to ignore the ";" in between begin & end for temporarily, $$ or // can used
+CREATE PROCEDURE get_students()
+BEGIN
+    SELECT * FROM student;
+END $$
+DELIMITER ; -- changing back to normal
+-- to invoke store procedure
+CALL get_students();
+
+-- to drop procedure
+DROP PROCEDURE get_students();
+-- with parameters
+DELIMITER $$
+CREATE PROCEDURE find_staff(IN id INT)
+BEGIN 
+    SELECT * FROM teacher
+    WHERE staff_id = id;
+END $$
+DELIMITER ;
+
+CALL find_staff(3);
