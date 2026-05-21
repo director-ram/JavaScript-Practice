@@ -329,3 +329,19 @@ SELECT SUM(salary), hire_date, staff_id
 FROM teacher 
 GROUP BY hire_date
 HAVING SUM(salary) > 35000 AND staff_id IS NOT NULL;
+
+-- rollup
+SELECT SUM(salary) AS "sum of salary", hire_date
+FROM teachers
+GROUP BY hire_date WITH ROLLUP;
+
+-- On Delete
+ALTER TABLE student
+ADD CONSTRAINT fk_reg_no
+FOREIGN KEY(reg_no) REFERENCES student(reg_no)
+ON DELETE SET NULL;
+-- with cascade
+ALTER TABLE student
+ADD CONSTRAINT fk_reg_no
+FOREIGN KEY(reg_no) REFERENCES student(reg_no)
+ON DELETE CASCADE;

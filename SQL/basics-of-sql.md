@@ -306,3 +306,11 @@ FOREIGN KEY (reg_no) REFERENCES students(reg_no);
 
 ## Having clause ##
 - Used to filter the result of a group by query.
+
+## RollUp ##
+- Extension of the groupby clause
+- produces another row and shows the GRAND TOTAL
+
+## On DELETE ##
+- ON DELETE SET NULL = when a FK(foreign key) is deleted, replace FK with null
+- ON DELETE CASCADE = when a FK is deleted, delete row
