@@ -368,3 +368,9 @@ END $$
 DELIMITER ;
 
 CALL find_staff(3);
+
+-- Trigger
+CREATE TRIGGER before_insert_teacher
+BEFORE INSERT ON teacher -- before or after can be used based on your requirement
+FOR EACH ROW 
+SET NEW.email = CONCAT(NEW.first_name, "@gmail.com"); -- using NEW to access the new data that is being inserted and OLD to access the old data that is being deleted

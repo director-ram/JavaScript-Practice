@@ -321,3 +321,9 @@ FOREIGN KEY (reg_no) REFERENCES students(reg_no);
 - increases performance
 - secure, admin can grant permission to use
 - increases memory usage of every connection
+
+## Trigger ##
+- When an event happens do something ex(INSERT, UPDATE, DELETE)
+    checks data, handles errors, auditing tables
+
+## That's all for this SQL Repo ##
